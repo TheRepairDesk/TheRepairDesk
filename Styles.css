@@ -6,7 +6,7 @@
     font-family: 'Signika Negative', sans-serif;
 }
 
-.bodyh, html{
+#htmlbody{
     height: 100%;
     background-size: cover;
     background-attachment: fixed;
@@ -19,7 +19,7 @@
     margin-left: 400px;
     margin-top: 15px;
 }
-header{
+#header{
     background: rgb(96, 138, 189);
 }
 
@@ -90,18 +90,19 @@ nav ul li a:hover{
 }
 
 
+
 @keyframes animate{
     0%, 100% {
-        background-image: url('https://therepairdesk.co.uk/wp-content/uploads/2022/09/Laptopgaming-scaled.jpg');
+        background-image: url(/Slideshow/Laptopgaming.jpg);
     }
     25% {
-        background-image: url('https://therepairdesk.co.uk/wp-content/uploads/2022/09/Laptopfamily-scaled.jpg');
+        background-image: url(/Slideshow/Laptopfamily.jpg);
     }
     50% {
-        background-image: url('https://therepairdesk.co.uk/wp-content/uploads/2022/09/Laptopoffice-scaled.jpg');
+        background-image: url(/Slideshow/Laptopoffice.jpg);
     }
     75% {
-        background-image: url('https://therepairdesk.co.uk/wp-content/uploads/2022/09/Laptoprepair-scaled.jpg');
+        background-image: url(/Slideshow/Laptoprepair.jpg);
     }
 }
 /*end of slideshow*/
@@ -138,18 +139,10 @@ nav ul li a:hover{
 }
 
 .secondsection{
-    color :#000;
-    text-align: center;
-    margin-top: 10px;
-    font-size: 40px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(85, 85, 85);
-    padding: 30px 50px;
-    width: 500px;
-    margin-left: 680px;
-    background-color: #000;
+  position: relative;
+  top: 600px;
+  background-size: cover;
 }
-
 
 .titledecor {
     overflow: hidden;
@@ -307,7 +300,7 @@ top: 20px;
 .repairs{
   position: absolute;
   width: auto;
-  margin-top: 400px;
+  margin-top: 1000px;
 }
 .repairtitle{
   position: absolute;
