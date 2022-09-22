@@ -93,16 +93,16 @@ nav ul li a:hover{
 
 @keyframes animate{
     0%, 100% {
-        background-image: url("https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptopgaming.jpg");
+        background-image: url("raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptopgaming.jpg");
     }
     25% {
-        background-image: url("https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptopfamily.jpg");
+        background-image: url("raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptopfamily.jpg");
     }
     50% {
-        background-image: url("https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptopoffice.jpg");
+        background-image: url("raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptopoffice.jpg");
     }
     75% {
-        background-image: url("https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptoprepair.jpg");
+        background-image: url("raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Laptoprepair.jpg");
     }
 }
 /*end of slideshow*/
