@@ -130,27 +130,29 @@
                         <p class="moretext">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex dolorem a </p>
                     </span>
                     </div>
+
+
                     <div class="contactform">
                         <h2 class="titledecor">Contact Us</h2>
                         <p class="undertitlecontact">If you wish to book or enquire us fill in below</p>
                         <div class="contactdiv">
-                        <form onsubmit="sendEmail(); reset(); return false;">
+                        <form action="https://formspree.io/f/xrgdkpyb" method="POST">
                            <h3>First Name</h3>
-                           <input type="text" id="firstname" placeholder="George" required>
+                           <input type="name" id="firstname" name="firstName" placeholder="George" required>
                             <h3>Last Name</h3>
-                            <input type="text" id="lastname" placeholder="Sailor" required>
+                            <input type="text" id="lastname" name="lastName" placeholder="Sailor" required>
                             <h3>Email</h3>
-                            <input type="email" id="email" placeholder="George_sailor@gmail.com" required>
+                            <input type="email" id="email" name="email" placeholder="George_sailor@gmail.com" required>
                             <h3>Phone Number</h3>
-                            <input type="tel" id="phonenumber" placeholder="07551 401706" pattern="[0-9]{11}" required>
+                            <input type="tel" id="phonenumber" name="phonenumber" placeholder="07551 401706" pattern="[0-9]{11}" required>
                             <h3>Enquiry</h3>
-                            <select id="enquiry" data-placeholder="Hello" required>
+                            <select id="enquiry" name="selection" data-placeholder="Hello" required>
                                 <option selected disabled value="">Select an option</option>
-                                <option value="Enquiry about a service or product" required> Enquiry about a service or product </option>
+                                <option value="Enquiry about a service or product"> Enquiry about a service or product </option>
                                 <option value="Make a booking"> Make a booking </option>
                             </select>
                             <h3>Subject</h3>
-                            <textarea type="text" id="textarea" placeholder="Explain to us how we can help" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></textarea>
+                            <textarea type="text" id="textarea" name="text" placeholder="Explain to us how we can help" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></textarea>
                             <br>
                             <button type="submit" id="btnbtn-primary">Submit</button>
 
@@ -162,22 +164,6 @@
 
             
 <!--smtp password: A4569A7A3E8F5F8F69FF148B474A9E6545C2-->
-           
-       <script src="https://smtpjs.com/v3/smtp.js"></script>    
-       <script>
-        function sendEmail(){
-            Email.send({
-                Host : "smtp.elasticemail.com",
-                Username : "enquiry@therepairdesk.co.uk",
-                Password : "lkrlfkcejvhzhmbg",
-                To : 'csAyman.Ali@gmail.com',
-                From : document.getElementById("email").value,
-                Subject : "TheRepairDesk Contact Enquiry",
-                Body : "And this is the body"
-            }).then(
-            message => alert(message)
-            );
-        }
-       </script> 
+
 </body>
 </html>
