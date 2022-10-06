@@ -2,95 +2,143 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #000;
-    font-family: 'Signika Negative', sans-serif;
-}
-
-#htmlbody{
-    height: 100%;
-    background-size: cover;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
+    color: black;
     width: 100%;
+    font-family: 'Signika', sans-serif;
 }
-/*Navigation Bar*/ 
-.navcontainer{
-    width: 79%;
-    margin-left: 400px;
-    margin-top: 15px;
+html{
+    height: -webkit-fill-available;
 }
-#header{
-    background: rgb(96, 138, 189);
+section{
+    padding-block: min(20vh, 10rem);
+}
+.titledecor{
+    overflow: hidden;
+    text-align: center;
+}
+.titledecor::before,
+.titledecor::after{
+    background-color: rgb(85, 85, 85);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    vertical-align: middle;
+    width: 12%;
+    position: relative;
+    
+}
+.titledecor::before{
+    right: 0.5em;
+    margin-left: -50%;
+}
+.titledecor::after{
+    left: 0.5em;
+    margin-right: -50%;
+}
+.capitaltitles{
+    text-align: center;
+}
+.navbar{
+    list-style-type: none;
+    width: 100%;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    background-color: #C0C0C0;
+    height: 150px;
+}
+#logo-container{
+    width: auto;
+    background-color: transparent;
 }
 
 nav ul{
-    margin: 0%;
-    padding: 0;
-    list-style: none;
+    list-style-type: none;
+    display: flex;
 }
 nav ul li{
+    margin-top: 60px;
+    width: auto;
+    margin-left: 50px;
     display: inline-block;
-    padding-left: 50px;
-    padding-top: 35px;
-    padding-bottom: 30px;
-    
 }
 nav ul li a{
-    position: relative;
-    color: black;
     text-decoration: none;
-    text-transform: uppercase;
     font-size: 18px;
-    text-decoration: none;
-    background-color: transparent;
-    
+    text-transform: uppercase;
+    justify-content: space-between;
 }
 nav ul li a:hover{
-    transition: all .1s ease-out;
-    color: wheat;
+   transition: all .1s ease-out; 
+   color: #4C1C86;
+   cursor: pointer;
 }
-/* The logo */
-#picture{
-    position: absolute;
-    padding-right: 0px;
-}
-
-/* End of navivgation bar */
-
-/*Slideshow*/
-.slideshowdetails{
-    position: absolute;
-    left: 0;
-    top: 0px;
+.slideshow{
+    position: relative;
     width: 100%;
-    height: 57vh;
+    height: 70vh;
+    background-color: transparent;
     animation: animate 30s ease-in-out infinite;
     background-size: cover;
+    padding: auto;
+    display: flex;
+    flex-direction: column;
 }
-.slideshowouter{
-    position: absolute;
-    left: 0;
-    top: 122px;
-    width: 100%;
-    height: 57vh;
-    background:rgba(0,0,0,0.5)
+
+@media (min-height: 1000px){
+    .slideshow{
+        position: relative;
+        width: 100%;
+        height: 30vh;
+        background-color: transparent;
+        animation: animate 30s ease-in-out infinite;
+        background-size: cover;
+        padding: auto;
+        display: flex;
+        flex-direction: column;
+    }
 }
 .slideshowdetails{
     position: relative;
     text-align: center;
+    top: 35%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    list-style-type: none;
+    width: 900px;
+    transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    margin-left: 50%;
+    font-size: 28px;
+    font-weight: 600;
 }
-#slideshowtext{
-    position: relative;
-    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
-    color: aliceblue;
-    font-size: 60px;
-    font-family: 'Roboto', sans-serif;
-    top: 100px;
-    text-transform: capitalize;
+.slideshowtitle{
+    overflow: wrap;
+    padding: 10px 10px 10px 10px;
+    background-color: transparent;
+    color: white;
+    -webkit-text-stroke: 1px black;
 }
+.slideshowbuttonbox{
+    margin-top: 5px;
+}
+.slideshowbutton{
+    text-decoration: none;
+    padding: 18px 25px;
+    border: solid 1px black;
+    background-color: #4C1C86;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    font-size: 16px;
+}
+.slideshowbutton:hover{
+    background-color: white;
+    color: #4C1C86;
+    transition: ease-in 0.21s;
+    border: none;
 
-
-
+}
 @keyframes animate{
     0%, 100% {
         background-image: url(/Slideshow/Laptopgaming.jpg);
@@ -105,438 +153,158 @@ nav ul li a:hover{
         background-image: url(/Slideshow/Laptoprepair.jpg);
     }
 }
-/*end of slideshow*/
-/*button for repair booking on the slideshow */
-.slideshowbuttonbox{
-    position: absolute;
-    top: 300px;
-    left: 43%;
-    list-style: none;
-    text-decoration: none;
-    background-color: transparent;
-}
-.slideshowbuttonbox:hover{
-    cursor: pointer;
-    background-color: black;
-    transition: .22s ease-out;
-    text-align: center; 
-    border-radius: 7px;
-}
-
-.buttonb{
-    background-color: white;
-    color: rgb(96, 138, 189);
-    border-radius: 4px;
-    padding: 15px 30px;
-    font-size: 15px;
-}
-.buttonb:hover{
-    cursor: pointer;
-    background-color: rgb(96, 138, 189);
-    color: white;
-    transition: 0.2s ease-in;
-    border-radius: 7px;
-}
-
-.secondsection{
-  position: relative;
-  top: 600px;
-  background-size: cover;
-}
-
-.titledecor {
-    overflow: hidden;
-    text-align: center;
-    width: 800px;
-    margin-left: 520px;
-    font-size: 35px;
-    font-family: 'Poppins', sans-serif;
-    color: rgb(85, 85, 85);;
-}
-  
-  .titledecor:before,
-  .titledecor:after {
-    background-color: rgb(85, 85, 85);
-    content: "";
-    display: inline-block;
-    height: 1px;
+.about{
     position: relative;
-    vertical-align: middle;
-    width: 50%;
-  }
-  
-  .titledecor:before {
-    right: 0.5em;
-    margin-left: -50%;
-  }
-  
-  .titledecor:after {
-    left: 0.5em;
-    margin-right: -50%;
-  }
-
-  
-
-  /* Laptop Repairs */
-  .padding-about1{
-    width: auto;
-    position: absolute;
-    border: 15px black;
-    background-color: transparent;
-    padding: 50px 20px;
-    margin-left: 150px;
-    line-height: 150%;
-  }
-
- .padding-pic1{
-  position: relative;
-  left: 150px ;
- }
-
- .padding-title1{
-  position: relative;
-  text-align: center;
-  font-size: 20px;
- }
-
- .padding-text1{
-  position: relative;
-  width: 350px;
-  overflow: wrap;
-  text-align: center;
-  top: 20px;
- }
-
- .padding-about2{
-  width: auto;
-  position: absolute;
-  border: 15px black;
-  background-color: transparent;
-  padding: 50px 20px;
-  margin-left: 550px;
-  line-height: 150%;
-}
-
- .padding-pic2{
-  position: relative;
-  left: 150px;
-
- }
- .padding-title2{
-  position: relative;
-  text-align: center;
-  font-size: 20px;
- }
-
- .padding-text2{
-  position: relative;
-  width: 350px;
-  top: 20px;
-  text-align: center;
-  overflow: wrap;
- }
-
- .padding-about3{
-  width: auto;
-  position: absolute;
-  border: 15px black;
-  background-color: transparent;
-  padding: 50px 20px;
-  margin-left: 950px;
-  line-height: 150%;
-}
-
-.padding-pic3{
-position: relative;
-left: 150px ;
-}
-
-.padding-title3{
-position: relative;
-text-align: center;
-font-size: 20px;
-}
-
-.padding-text3{
-position: relative;
-width: 350px;
-overflow: wrap;
-text-align: center;
-top: 20px;
-}
-
-.padding-about4{
-  width: auto;
-  position: absolute;
-  border: 15px black;
-  background-color: transparent;
-  padding: 50px 20px;
-  margin-left: 1350px;
-  line-height: 150%;
-  
-}
-
-.padding-pic4{
-position: relative;
-left: 150px ;
-}
-
-.padding-title4{
-position: relative;
-text-align: center;
-font-size: 20px;
-}
-
-.padding-text4{
-position: relative;
-width: 350px;
-overflow: wrap;
-text-align: center;
-top: 20px;
-}
-
-
-/* Services and Repairs */
-.repairs{
-  position: absolute;
-  width: auto;
-  margin-top: 1000px;
-}
-.repairtitle{
-  position: absolute;
-  font-size: 35px;
-  font-family: 'Poppins', sans-serif;
-  color: rgb(85, 85, 85);;
-}
-/*Part 1*/
-.repairspart1{
-    position: relative;
-    width: auto;
+    height: 480px;
+    width: 100%;
     margin-top: 50px;
-    margin-left: 150px;
-    margin-right: -450px;
-    display: flex;
-    height: 200px;
-
 }
-.databackupcontainer{
-    position: relative;
-    margin-left: 110px;
-
-}
-.databackuptitle{
-    position: relative;
-    right: 10px;
-    
-}
-.databackuptext{
-    position: relative;
-    width: 300px;
-    text-align: center;
-    right: 100px;
-}
-
-.Databackuppic{
-    position: relative;
-}
-
-.diagnosiscontainer{
-    position: relative;
-    margin-left: 110px;
-}
-
-.diagnosispic{
-    position: relative;
-}
-
-.diagnosistitle{
-    position: relative;
-}
-.diagnosistext{
-    position: relative;
-    width: 300px;
-    right: 110px;
-    text-align: center;
-}
-.oscontainer{
-    position: relative;
-    margin-left: 110px;
-}
-.ospic{
-    position: relative;
-    left: 15px;
-}
-.ostitle{
-    position: relative;
-}
-.ostext{
-    position: relative;
-    width: 300px;
-    right: 110px;
-    text-align: center;
-}
-
-.optimizationcontainer{
-    position: relative;
-    margin-left: 100px;
-}
-.optimizationpic{
-    position: relative;
-}
-.optimizationtitle{
-    position: relative;
-    right: 10px;
-}
-.optimizationtext{
-    position: relative;
-    width: 300px;
-    right: 110px;
-    text-align: center;
-}
-
-
-/*part 2*/
-.repairspart2{
+.about-us-title{
     position: absolute;
-    width: auto;
-    margin-top: 100px;
+    text-align: center;
+}
+#about-container{
+    position: absolute;
+    margin-top: 50px;
     display: flex;
-    height: 200px;
-    margin-left: 150px;
-    margin-right: -450px;
+    justify-content: space-between;
+}
+.about-section{
+    position: relative;
+    width: 400px;
+    margin: 0px 50px 0px 50px;
+    text-align: center;
+}
+.about-undertitle{
+    position: relative;
+    text-align: center;
+}
+.about-pic{
+    height: 85px;
+    width: 85px;
+}
+.repairs{
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+.repairs-title{
+    position: absolute;
+    text-align: center;
+    align-items: center;
+}
+.databackupimg{
+    height: 50px;
+    width: 50px;
+}
+
+.repairs-container1{
+    position: absolute;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.repairdivbox{
+    width: 300px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.repairs-container2{
+    position: absolute;
+    height: 250px;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 300px;
+}
+.contact{
+    position: relative;
+    height: 600px;
+}
+.contact-container{
+    position: relative;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+}
+.contact-title{
+    position: relative;
+    text-align: center;
+}
+.contact-undertitle{
+    position: relative;
+    text-align: center;
+    margin-top: 20px;
+    font-weight: 500;
+}
+.contact-form{
+    position: relative;
+    padding-top: 30px;
     width: auto;
-  }
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+.inputtitles{
+    font-size: 20px;
+    font-weight: 600;
 
-  .waterdamagecontainer{
-    position: relative;
-    margin-left: 110px;
-  }
-  .waterdamagepic{
-    position: relative;
-  }
+}
+.input{
+    width:500px;
+    display: flex;
+    height: 35px;
+    font-size: 18px;
+    border: 1px solid black;
+    font-family: 'Signika', sans-serif;
+}
+#submit-button{
+    justify-content: center;
+    border: 2px solid black;
+    background-color: white;
+    align-items: center;
+    margin-top: 5px;
+}
 
-  .waterdamagetitle{
+#submit-button:hover{
+    cursor: pointer;
+    background-color: #C0C0C0;
+    color: white;
+    transition: ease-in 0.13s;
+}
+.footer{
     position: relative;
-    right: 50px;
-  }
-  .waterdamagetext{
+    height: 430px;
+    background-color: #C0C0C0;
+}
+.footer-sec1{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    margin-left: 5%;
+
+}
+.footer-sec2{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    margin-left: 25%;
+}
+.footer-sec3{
+    position: absolute;
+    height: 100%;
+    width: 20%;
+    margin-left: 77%;
+}
+.footer-titles{
     position: relative;
     text-align: center;
-    width: 300px;
-    right: 110px;
-  }
-
-  .graphicscardcontainer{
-    position: relative;
-    margin-left: 110px;
-  }
-
-  .graphicscarpic{
-    position: relative;
-  }
-  .graphicscardtitle{
-    position: relative;
-    right: 50px;
-  }
-  .graphicscardtext{
-    position: relative;
-    right: 110px;
-    width: 300px;
-    text-align: center;
-  }
-
-  .cleaningcontainer{
-    position: relative;
-    margin-left: 120px;
-  }
-  .cleaningpic{
-    position: relative;
-  }
-  
-  .cleaningtitle{
-    position: relative;
-    right: 30px;
-  }
-  .cleaningtext{
-    right: 125px;
-    position: relative;
-    text-align: center;
-    width: 300px;
-  }
-
-  .morecontainer{
-    position: relative;
-    margin-left: 90px;
-  }
-.morepic{
-    position: relative;
+    margin-top: 25px;
 }
-.moretitle{
-    position: relative;
-    left: 15px;
-}
-.moretext{
-    position: relative;
-    text-align: center;
-    width: 300px;
-    right: 120px;
-}
-
-.contactform{
-  position: relative;
-  background-color: transparent;
-  top: 350px;
-  padding: auto;
-}
-
-.undertitlecontact{
-  position: relative;
-  text-align: center;
-  top: 20px;
-}
-.contactdiv{
-  width: 100%;
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin-top: 50px;
-  left: 280px;
-}
-#firstname{
-  width: 500px;
-  height: 40px;
-  font-size: 20px;
-}
-#lastname{
-  width: 500px;
-  height: 40px;
-  font-size: 20px;
-}
-#phonenumber{
-  width: 500px;
-  height: 40px;
-  font-size: 20px;
-}
-#enquiry{
-  width: 500px;
-  height: 40px;
-  font-size: 20px;
-}
-
-#textarea{
-  width: 500px;
-  height: 100px;
-  font-size: 20px;
-}
-#btnbtn-primary{
-  width: 500px;
-  height: 40px;
-  cursor: pointer;
-}
-#email{
-  width: 500px;
-  height: 40px;
-  font-size: 20px;
+.footer-sec1-container{
+    display: flex;
+    flex-direction: column;
 }
