@@ -169,6 +169,21 @@ nav ul li a:hover{
     display: flex;
     justify-content: space-between;
 }
+@media (min-width: 800px){
+    #about-container{
+        position: relative;
+        margin-top: 50px;
+        display: flex;
+        flex-direction: column;
+        justify-items: center;
+        background-color: #4C1C86;
+        align-items: center;
+    }
+    .about{
+        height: 900px;
+    }
+}
+
 .about-section{
     position: relative;
     width: 400px;
@@ -283,21 +298,18 @@ nav ul li a:hover{
 .footer-sec1{
     position: absolute;
     height: 100%;
-    width: 20%;
+    width: 50%;
     margin-left: 5%;
 
+}
+#footer-insta-logo{
+    width: 20px;
 }
 .footer-sec2{
     position: absolute;
     height: 100%;
-    width: 50%;
-    margin-left: 25%;
-}
-.footer-sec3{
-    position: absolute;
-    height: 100%;
     width: 20%;
-    margin-left: 77%;
+    margin-left: 60%;
 }
 .footer-titles{
     position: relative;
