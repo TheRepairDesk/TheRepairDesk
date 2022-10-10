@@ -35,29 +35,29 @@ section{
     left: 0.5em;
     margin-right: -50%;
 }
-.capitaltitles{
-    text-align: center;
+
+.navigation{
+    display: inline-flex;
 }
 .navbar{
     list-style-type: none;
     width: 100%;
-    display: flex;
-    margin: 0;
-    padding: 0;
     background-color: #C0C0C0;
-    height: 150px;
+    height: 100%;
+    position: relative;
 }
 #logo-container{
-    width: auto;
+    width: 150px;
+    height: 100px;
     background-color: transparent;
 }
 
 nav ul{
     list-style-type: none;
     display: flex;
+    align-items: center;
 }
 nav ul li{
-    margin-top: 60px;
     width: auto;
     margin-left: 50px;
     display: inline-block;
@@ -85,27 +85,23 @@ nav ul li a:hover{
     flex-direction: column;
 }
 
-@media (min-height: 1000px){
-    .slideshow{
-        position: relative;
-        width: 100%;
-        height: 30vh;
-        background-color: transparent;
-        animation: animate 30s ease-in-out infinite;
-        background-size: cover;
-        padding: auto;
-        display: flex;
-        flex-direction: column;
+@media (max-width: 768px){
+    div.slideshow{
+        display: none;
+    }
+    div.navbar{
+        display: none;
     }
 }
 .slideshowdetails{
     position: relative;
     text-align: center;
-    top: 35%;
+    margin-top: 200px;
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
     list-style-type: none;
-    width: 900px;
+    width: 50%;
+    height: 50%;
     transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     margin-left: 50%;
@@ -155,7 +151,7 @@ nav ul li a:hover{
 }
 .about{
     position: relative;
-    height: 480px;
+    min-height: 480px;
     width: 100%;
     margin-top: 50px;
 }
@@ -164,28 +160,10 @@ nav ul li a:hover{
     text-align: center;
 }
 #about-container{
-    position: absolute;
     margin-top: 50px;
     display: flex;
     justify-content: space-between;
 }
-@media (max-height: 1000px){
-    #about-container{
-        position: relative;
-        margin-top: 50px;
-        display: flex;
-        flex-direction: column;
-        justify-items: center;
-        background-color: #4C1C86;
-        align-items: center;
-    }
-    .about{
-        height: 2400px;
-        font-size: 36px;
-
-    }
-}
-
 .about-section{
     position: relative;
     width: 400px;
@@ -200,9 +178,35 @@ nav ul li a:hover{
     height: 85px;
     width: 85px;
 }
+@media (max-width: 768px){
+    #about-container{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: 100%;
+        margin-bottom: 50px;
+        align-items: center;
+    }
+    .about-container{
+        position: relative;
+        width: 300px;
+        margin: 0px 50px 0px 50px;
+        text-align: center;
+    }
+    .repairs-container1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .repairs-container2{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}t
 .repairs{
     position: relative;
-    height: 700px;
+    height: 100%;
     width: 100%;
 }
 .repairs-title{
@@ -216,8 +220,7 @@ nav ul li a:hover{
 }
 
 .repairs-container1{
-    position: absolute;
-    height: 250px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -229,12 +232,12 @@ nav ul li a:hover{
 }
 
 .repairs-container2{
-    position: absolute;
-    height: 250px;
+    height: 100%;
     display: flex;
     justify-content: space-between;
     width: 100%;
-    margin-top: 300px;
+    margin-top: 70px;
+    margin-bottom: 100px;
 }
 .contact{
     position: relative;
@@ -278,6 +281,14 @@ nav ul li a:hover{
     border: 1px solid black;
     font-family: 'Signika', sans-serif;
 }
+@media (max-width: 768px) {
+    .input{
+        width:100%;
+        display: flex;
+        height: 35px;
+        font-size: 18px;
+    }
+}
 #submit-button{
     justify-content: center;
     border: 2px solid black;
@@ -294,8 +305,9 @@ nav ul li a:hover{
 }
 .footer{
     position: relative;
-    height: 430px;
+    height: 434px;
     background-color: #C0C0C0;
+    width: 100%;
 }
 .footer-sec1{
     position: absolute;
@@ -305,7 +317,15 @@ nav ul li a:hover{
 
 }
 #footer-insta-logo{
-    width: 20px;
+    width: auto;
+    height: 50px;
+}
+#footer-facebook-logo{
+    width: 50px;
+
+}
+#footer-ebay-logo{
+    width: 120px;
 }
 .footer-sec2{
     position: absolute;
@@ -318,7 +338,25 @@ nav ul li a:hover{
     text-align: center;
     margin-top: 25px;
 }
-.footer-sec1-container{
+.footer-sec2-container{
     display: flex;
     flex-direction: column;
+}
+.second-section-container{
+    margin-top: 10%;
+    display: flex;
+    width: 240px;
+  } 
+@media (max-width: 768px){
+
+    div.footer-sec1{
+        display: none;
+    }
+    div.footer-sec2{
+        margin-left: 0%;
+        width: 100%;
+    }
+  .second-section-container{
+
+  }
 }
