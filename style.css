@@ -285,7 +285,7 @@ nav ul li a:hover{
     #about{
         font-size: 25px;
     }
-    #Repairs{
+    #repairs{
         font-size: 25px;
     }
     .contact{
@@ -379,6 +379,7 @@ nav ul li a:hover{
     min-height: 110px;
     max-height: 300px;
     max-width: 500px;
+    min-width: 500px;
 }
 @media (max-width: 768px) {
     .input{
@@ -536,4 +537,11 @@ nav ul li a:hover{
       .active {
         display: none;
       }
+}
+.trustpilot-widget{
+    display: initial;
+    position: relative;
+    padding: auto;
+    
+
 }
