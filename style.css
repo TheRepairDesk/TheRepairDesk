@@ -152,6 +152,39 @@ nav ul li a:hover{
         background-image: url(https://github.com/TheRepairDesk/TheRepairDesk/blob/main/Slideshow/Laptoprepair.jpg?raw=true);
     }
 }
+
+@media (min-width: 769px){
+    .homeformobile-div{
+        display: none;
+    }
+}
+@media (max-width: 768px){
+    .homeformobile-div{
+        position: relative;
+        height: auto;
+        min-height: 70px;
+        width: 100%;
+    }
+    .innerhomemobile{
+        position: relative;
+        max-width: 400px;
+        text-align: center;
+    }
+    .homemobilebutton{
+        position: relative;
+        top: 15px;
+        border: solid 1px black;
+        padding: 8px;
+        background-color: #4C1C86;
+        color: #FFFFFF;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .mobilelogohome{
+        height: 105px;
+        width: auto;
+    }
+}
 .about{
     position: relative;
     min-height: 480px;
@@ -379,7 +412,7 @@ nav ul li a:hover{
     min-height: 110px;
     max-height: 300px;
     max-width: 500px;
-    min-width: 500px;
+
 }
 @media (max-width: 768px) {
     .input{
@@ -392,6 +425,7 @@ nav ul li a:hover{
         margin-top: 0px;
     }
 }
+    
 #submit-button{
     justify-content: center;
     border: 2px solid black;
