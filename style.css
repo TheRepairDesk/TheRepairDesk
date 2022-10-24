@@ -138,18 +138,22 @@ nav ul li a:hover{
     border: none;
 
 }
+.strongtitle{
+    color: white;
+    text-shadow: 3px 2px black;
+}
 @keyframes animate{
     0%, 100% {
-        background-image: url(https://github.com/TheRepairDesk/TheRepairDesk/blob/main/Slideshow/Laptopgaming.jpg?raw=true);
+        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptopgaming.avif);
     }
     25% {
-        background-image: url(https://github.com/TheRepairDesk/TheRepairDesk/blob/main/Slideshow/Laptopfamily.jpg?raw=true);
+        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptopfamily.avif);
     }
     50% {
-        background-image: url(https://github.com/TheRepairDesk/TheRepairDesk/blob/main/Slideshow/Laptopoffice.jpg?raw=true);
+        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptopoffice.avif);
     }
     75% {
-        background-image: url(https://github.com/TheRepairDesk/TheRepairDesk/blob/main/Slideshow/Laptoprepair.jpg?raw=true);
+        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptoprepair.avif);
     }
 }
 
@@ -161,28 +165,37 @@ nav ul li a:hover{
 @media (max-width: 768px){
     .homeformobile-div{
         position: relative;
-        height: auto;
-        min-height: 70px;
         width: 100%;
+        line-height: 100px;
+        
     }
     .innerhomemobile{
         position: relative;
-        max-width: 400px;
+        max-width: 95%;
+        margin: auto;
         text-align: center;
+    }
+    .hometextformobile{
+        position: relative;
+        margin-top: 30px;
+        font-size: 26px;
+        line-height: normal;
     }
     .homemobilebutton{
         position: relative;
-        top: 15px;
-        border: solid 1px black;
-        padding: 8px;
+        border: solid 0.1px black;
+        padding: 10px 15px 10px 15px;
         background-color: #4C1C86;
         color: #FFFFFF;
         text-decoration: none;
         border-radius: 5px;
     }
     .mobilelogohome{
-        height: 105px;
+        height: 135px;
         width: auto;
+    }
+    .homemobilebutton:hover{
+        text-shadow: 0.2px 0.3px white;
     }
 }
 .about{
@@ -295,6 +308,7 @@ nav ul li a:hover{
         height: 100%;
         margin-bottom: 50px;
         align-items: center;
+        flex-direction: column;
     }
     .about-container{
         position: relative;
@@ -306,6 +320,7 @@ nav ul li a:hover{
         display: flex;
         flex-direction: column;
         align-items: center;
+        width: 350px;
     }
     .repairs-container2{
         display: flex;
@@ -335,7 +350,36 @@ nav ul li a:hover{
     text-align: center;
     align-items: center;
 }
-.databackupimg{
+.mainrepair{
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.mainrepairundertitle{
+    position: relative;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px;
+    font-size: 22px;
+}
+.mainrepairtext{
+    position: relative;
+    width: 30%;
+    margin: auto;
+    text-align: center;
+    margin-top: 0.9%;
+    font-size: 115%;
+}
+@media (max-width: 768px){
+    .mainrepairtext{
+        width: 92%;
+        margin-top: 7.5%;
+    }
+    .mainrepairundertitle{
+        font-size: 22px;
+    }
+}
+.Laptoprepair{
     height: 50px;
     width: auto;
 }
@@ -346,6 +390,7 @@ nav ul li a:hover{
     justify-content: space-between;
     width: 90%;
     margin: auto;
+    margin-top: 30px;
 }
 .repairdivbox{
     width: 300px;
