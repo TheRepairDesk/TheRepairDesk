@@ -855,18 +855,18 @@
     margin-top: 2vw;
   }
   
-  @keyframes animate{
+    @keyframes animate{
     0%, 100% {
-        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptopgaming.avif);
+        background-image: url("/laptop-repair-pictures/webp-pictures/Family-Laptop-Repair.webp");
     }
     25% {
-        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptopfamily.avif);
+        background-image: url("/laptop-repair-pictures/webp-pictures/Gaming-Laptop-Repair.webp");
     }
     50% {
-        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptopoffice.avif);
+        background-image: url("/laptop-repair-pictures/webp-pictures/Motherboard-Repair.webp");
     }
     75% {
-        background-image: url(https://raw.githubusercontent.com/TheRepairDesk/TheRepairDesk/main/Pictures/Avif/laptoprepair.avif);
+        background-image: url("/laptop-repair-pictures/webp-pictures/Laptop-Office-Repair.webp");
     }
 }
 /* End of Home Section */
@@ -1184,7 +1184,5 @@
     transition: .35s;
   }
 }
-
-
 
       
