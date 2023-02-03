@@ -123,6 +123,7 @@
   }
   .contact-info-box-section-1-title{
     margin-top: 1vw;
+    font-size: 3vw;
   }
   .contact-info-box-section-2{
     text-align: center;
@@ -130,6 +131,7 @@
   }
   .contact-info-box-section-2 a{
     text-decoration: none;
+    font-size: 3vw;
   }
   .contact-info-box-section-2-img{
     width: 10vw;
@@ -137,6 +139,7 @@
   }
   .contact-info-box-section-2-title{
     margin-top: 1vw;
+    font-size: 3vw;
   }
   .contact-info-box-section-3{
     text-align: center;
@@ -149,9 +152,14 @@
   }
   .contact-info-box-section-3-title{
     margin-top: 1vw;
+    font-size: 3vw;
   }
   .contact-info-box-section-1 a{
     text-decoration: none;
+    font-size: 3vw;
+  }
+  .contact-info-box-section-3 p{
+    font-size: 3vw;
   }
   .contact-under-container-2{
     margin: auto;
