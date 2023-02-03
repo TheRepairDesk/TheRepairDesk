@@ -782,16 +782,15 @@
   }
   .footer-main-sections{
     width: 100%;
-    height: auto;
+    height: 50vh;
     display: flex;
   }
   .footer-contact-details-section{
     height: 100%;
     margin-left: 50px;
-    margin-bottom: 3vw;
   }
   .footer-contact-details-section-image{
-    width: 8vw;
+    width: 110px;
     height: auto;
     margin-left: 70px;
     margin-top: 5%;
